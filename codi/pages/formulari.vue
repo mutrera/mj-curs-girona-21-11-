@@ -1,0 +1,3 @@
+<template>
+    <Formulari></Formulari>
+</template>
