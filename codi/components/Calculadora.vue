@@ -24,7 +24,7 @@
 
             <v-col cols="6" class="colesquerra">
                 <h2>Resultat</h2>
-                {{resultat}}
+                <h2>{{resultat}}</h2> 
                 <br>
                 <br>
                 <br>
@@ -36,6 +36,45 @@
 </template>
 <script>
 export default{
+    mounted() {
+        // perqué agafi els valor del paramete query
+        console.log(this.$route)
+        if(this.$route.query.numero1){
+            this.numero1 = this.$route.query.numero1
+        }
+        if(this.$route.query.numero2){
+            this.numero2 = this.$route.query.numero2
+        }
+        if(this.$route.query.metode){
+            switch(this.$route.query.metode){
+                case"sumar":{
+                    this.sumar()
+                    break;
+
+                }
+                case"restar":{
+                    this.restar()
+                    break;
+
+                }
+                case"multiplicar":{
+                    this.multiplicar()
+                    break;
+
+                }
+                case"dividir":{
+                    this.dividir()
+                    break;
+
+                }
+                default:{
+
+                }
+            }
+
+        }
+
+    },
     data(){
         return{
             numero1:0,
