@@ -3,23 +3,12 @@
     <v-row>
       <v-row>
         <v-col>
-          <v-text-field 
-          label="Escriu el teu nom"
-          placeholder="p.e Sandra"
-          >
-          </v-text-field>
-          <v-text-field 
-          label="Escriu el teu nom"
-          solo>
-          </v-text-field>
-          <v-text-field 
-          label="Escriu el teu nom"
-          outlined>
-          </v-text-field>
-          <v-text-field 
-          label="Escriu el teu nom"
-          filled>
-          </v-text-field>
+
+<CampsDeText></CampsDeText>
+<!-- 
+  altra manera d´ecriure
+  <<camp-de-text></camp-de-text>
+ -->
         </v-col>
       </v-row>
     </v-row>
