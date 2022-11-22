@@ -1,1 +1,1 @@
-# mj-curs-girona-21-11-
+# mj-curs-girona-21-11-js
