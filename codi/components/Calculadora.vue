@@ -111,8 +111,30 @@ export default{
             this.numero1 = 0  
             this.numero2 = 0
             this.resultat= 0
+       }
 
-       } 
+       }, 
+       computed:{
+            laSuma(){
+                return parseFloat(this.numero1)
+                    +parseFloat(this.numero2)
+            },
+            laResta(){
+                return parseFloat(this.numero1)
+                    - parseFloat(this.numero2)
+            },
+            laMultiplicacio(){
+                return parseFloat(this.numero1)
+                    * parseFloat(this.numero2)
+            },
+            laDivisio(){
+                return parseFloat(this.numero1)
+                    / parseFloat(this.numero2)
+            },
+            edatUsuari(){
+                console.log("Typeof any",typeof(this.any))
+                return 2022-parseInt(this.any)
+            }
        
       
     
